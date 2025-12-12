@@ -399,6 +399,92 @@ body:hover .cursor-outline {
     }
 }
 
+/* Experience Section */
+.experience-timeline {
+    margin-top: var(--spacing-md);
+    position: relative;
+}
+
+.experience-item {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    gap: var(--spacing-lg);
+    padding: var(--spacing-md) 0;
+    border-bottom: 1px solid var(--color-light-gray);
+    position: relative;
+}
+
+.experience-item:last-child {
+    border-bottom: none;
+}
+
+.experience-period {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.period-date {
+    font-family: var(--font-serif);
+    font-size: 1.1rem;
+    color: var(--color-text);
+}
+
+.period-duration {
+    font-size: 0.9rem;
+    color: var(--color-gray);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.experience-content {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+}
+
+.experience-title {
+    font-family: var(--font-serif);
+    font-size: 1.8rem;
+    font-weight: 400;
+    margin-bottom: 0.2rem;
+}
+
+.experience-company {
+    font-size: 1.1rem;
+    color: var(--color-accent);
+    font-weight: 600;
+}
+
+.experience-type,
+.experience-location {
+    font-size: 0.95rem;
+    color: var(--color-gray);
+}
+
+.experience-skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: var(--spacing-sm);
+}
+
+.skill-tag {
+    padding: 0.4rem 0.8rem;
+    background-color: var(--color-light-gray);
+    color: var(--color-text);
+    font-size: 0.85rem;
+    border-radius: 4px;
+    text-transform: capitalize;
+}
+
+@media (max-width: 768px) {
+    .experience-item {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-sm);
+    }
+}
+
 /* Portfolio Section */
 .portfolio-grid {
     display: grid;
